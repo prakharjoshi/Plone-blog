@@ -1,0 +1,14 @@
+#!/home/prakhar/Plone/Python-2.7/bin/python
+
+import sys
+sys.path[0:0] = [
+    '/home/prakhar/Plone/buildout-cache/eggs/mr.developer-1.21-py2.7.egg',
+    '/home/prakhar/Plone/buildout-cache/eggs/zc.buildout-1.7.1-py2.7.egg',
+    '/home/prakhar/Plone/buildout-cache/eggs/setuptools-7.0-py2.7.egg',
+    ]
+
+
+import mr.developer.develop
+
+if __name__ == '__main__':
+    sys.exit(mr.developer.develop.develop())

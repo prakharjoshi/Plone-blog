@@ -1,0 +1,15 @@
+#!/home/prakhar/Plone/Python-2.7/bin/python
+
+import sys
+sys.path[0:0] = [
+    '/home/prakhar/Plone/buildout-cache/eggs/diazo-1.0.6-py2.7.egg',
+    '/home/prakhar/Plone/buildout-cache/eggs/experimental.cssselect-0.3-py2.7.egg',
+    '/home/prakhar/Plone/buildout-cache/eggs/lxml-2.3.6-py2.7-linux-x86_64.egg',
+    '/home/prakhar/Plone/buildout-cache/eggs/setuptools-7.0-py2.7.egg',
+    ]
+
+
+import diazo.rules
+
+if __name__ == '__main__':
+    sys.exit(diazo.rules.main())
